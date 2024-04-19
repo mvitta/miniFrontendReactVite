@@ -5,8 +5,8 @@ export default function Loading() {
         className='spinner-border text-black'
         role='status'
         style={{
-          width: '8rem',
-          height: '8rem',
+          width: '9rem',
+          height: '9rem',
         }}
       >
         <span className='visually-hidden'>Loading...</span>
