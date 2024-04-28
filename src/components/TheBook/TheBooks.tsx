@@ -8,14 +8,12 @@ interface PropsListBooks {
   index: number
 }
 
-export default function TheBook({ book, index }: PropsListBooks) {
+export default function TheBooks({ book, index }: PropsListBooks) {
   return (
     <div
       key={crypto.randomUUID()}
-      className='card'
-      style={{
-        minWidth: '25rem',
-      }}
+      className='border border-primary p-2 rounded-1'
+      style={{ height: 'auto' }}
     >
       {/* index no se puede usar para acceder a una portada */}
       <BookCover query={book.docs?.[index].isbn?.[index] ?? ''} />

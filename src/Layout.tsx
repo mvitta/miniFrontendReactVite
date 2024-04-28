@@ -5,6 +5,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <>
       <Header />
       <ContentPage />
+
       <section>{children}</section>
     </>
   )
